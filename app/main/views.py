@@ -1,8 +1,16 @@
-from flask import render_template
-from app import app
+from flask import render_template,request, redirect , url_for
+from ..request import get_news
+from . import main
 
 # Views
-@app.route('/news/<int:news_id>')
+@main.route('/')
 def index():
 
-    return render_template('index.html', title = title)
+    output = get_news()
+
+    return render_template('index.html', name = output)
+
+@main.route('/news/sources')
+def sources():
+
+    output = get_news()
