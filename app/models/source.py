@@ -1,5 +1,5 @@
 class source:
-    def __init__(self,source_id,name):
-        self.source_id = source_id
+    def __init__(self,id,name):
+        self.id = id
         self.name = name
        
