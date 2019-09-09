@@ -1,5 +1,6 @@
 from flask import Flask
-from .config import DevConfig
+from flask_boostrap import bootstrap
+from config import config_options
 
 # Initializing application
 app = Flask(__name__,instance_relative_config = True)
@@ -21,6 +22,3 @@ def create_app(config_name):
     app.register_blueprint(main_blueprint)
 
     return app
-
-
-from app import views
