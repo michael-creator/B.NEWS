@@ -1,9 +1,9 @@
 class source:
-    def __init__(self,id,name,description,urlToImage):
+    def __init__(self,id,name,description):
         self.id = id
         self.name = name
         self.description = description
-        self.urlToImage = urlToImage
+        
 
 class article:
     def __init__(self,article_id,author,title,description,url,urlToImage,publishedAt,content):
