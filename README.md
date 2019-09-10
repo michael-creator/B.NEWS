@@ -1,18 +1,22 @@
 # NEWS Highlights
-#### 
+#### app lets you get latest news and articles readly available and also you get to add comments for what you think has helped you.
 
-01-09-2019
+02-10-2019
 #### By **michael maina and company**
 ## Description
 
-## Setup/Installation Requirements
+app lets you get latest news and articles readly available and also you get to add comments for what you think has helped you.
+
+# Setup/Installation Requirements
 *install python
+$ sudo add-apt-repository ppa:deadsnakes/ppa
 $ sudo apt-get update
 $ sudo apt-get install python3.6
 ## Technologies Used
 python
 flask
 css
+html
 
 ## Support and contact details
 for any questions or if any problem arises feel free to contact us @ mikelkarije@gmail.com
