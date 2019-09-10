@@ -31,7 +31,7 @@ def getResult(list):
         get_list.append(obj)
     return get_list
 
-  def get_news_sources(news_sources):
+def get_news_sources(news_sources):
     get_news_sources_url = (base_url).format(news_source,api_key)
 
     with urllib.request.urlopen(get_news_sources_url) as url:
