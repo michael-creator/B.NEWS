@@ -1,6 +1,6 @@
 {% import 'macros.html' as macro %}
 {% extends 'base.html' %}
-
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
 <!-- <!DOCTYPE html>
 <html>
     <head>
@@ -18,6 +18,9 @@
 
 <ul>
     {{ macro.displaynewsList(name)}}
+</ul>
+<ul>
+    {{ macro.displaynewsList(urlToImage)}}
 </ul>
 
 
