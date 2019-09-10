@@ -1,1 +1,16 @@
+{% macro displayarticleList(news_list) %}
+
 <!-- <h1> welcome to news {{ id }} </h1> -->
+<div class="card" style="width: 25rem;">
+    <img class="card-img-top" src="{{ news.urlToImage}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ news.title}}</h5>
+      <h6 class="card-publishedAt">{{ news.publishedAt}}</h6>
+      <p class="card-author">{{ news.author}}</p>
+      <a href="{{ news.url}}" class="btn btn-primary">{{ news.title}</a>
+    </div>
+  </div>
+
+  {% endfor %}
+
+{% endmacro %}
